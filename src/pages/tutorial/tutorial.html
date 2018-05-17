@@ -1,0 +1,33 @@
+<ion-content>
+  <ion-slides pager (ionSlideDidChange)="slideChanged()" (ionSlideDrag)="slideMoved()">
+    <ion-slide>
+      <div class="diag" style="background:url('assets/imgs/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-analytics" md="md-analytics" color="primary" [@bounce]='state' (@bounce.done)="animationDone()"></ion-icon>
+      </div>
+      <div [@bounce]='state'>
+        <h2 class="tuto">Enregistrez votre téléphone</h2>
+        <p>En cas de perte/vol, déclarez votre téléphone</p>
+        <p>Tapez *#06# pour obtenir votre IMEI.</p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="diag" style="background:url('assets/imgs/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-checkmark-circle-outline" md="md-checkmark-circle-outline" color="primary" [@bounce]='state'></ion-icon>
+      </div>
+      <div [@bounce]='state'>
+        <h2 class="tuto">Vérifiez le téléphone</h2>
+        <p>Avant d'acheter un téléphone en occasion, Vérifiez s'il n'appartient pas déjà à quelqu'un</p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="diag" style="background:url('assets/imgs/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-trash" md="md-trash" color="primary" [@bounce]='state' (@bounce.done)="animationDone()"></ion-icon>
+      </div>
+      <div [@bounce]='state'>
+        <h2 class="tuto">Retirez votre téléphone</h2>
+        <p>Lorsque vous avez réussi à retrouver votre téléphone,supprimez le parmi les téléphones déclarés comme volés ou perdus</p>
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <button (click)="skip()" id="skip">{{skipMsg}}</button>
+</ion-content>
