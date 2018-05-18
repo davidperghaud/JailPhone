@@ -36,7 +36,6 @@
     "apollo-client-preset": "^1.0.8",
     "cordova-admob-sdk": "^0.16.0",
     "cordova-android": "7.0.0",
-    "cordova-ios": "4.5.4",
     "cordova-plugin-admob-free": "^0.16.2",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
